@@ -5,12 +5,12 @@
 }
 
 body {
-    background-image: url('/assets/main_phone.jpg');
+    background-image: url('assets/main_phone.jpg');
 }
 
 @font-face {
     font-family: 'MyCustomFont';
-    src: url('/fonts/minecraft-ten.otf') format('opentype');
+    src: url('fonts/minecraft-ten.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 
