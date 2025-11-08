@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" type="image/png" sizes="16x16" href="/icons/android-icon-36x36.png">
+        <link rel="manifest" href="manifest.json">
+
+        <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Pasha Clicker</title>
+    </head>
+    <body>
+        
+        <div class="container">
+            <p class="title">ПАША КЛИКЕР</p>
+            <div class="screen pasha_main active">
+                <img  class="img_pasha_main" src="/images/pasha_main.png" />
+                <p class="score_main">Счет: <span class="score">0<span/></p>
+            </div>
+
+            <div class="screen pasha_store disactivate">
+                <div class="store_card">
+                    <img class="masha_store" src="/images/masha.jpg"/>
+                    <div class="text_column">
+                        <p class="text_head">МАША</p>
+                        <p class="text_description">крашиха школы, лучшая певица и просто самая крутая сестра добавит +1 к клику</p>
+                    </div>
+                     <button class="button_store_buy" onclick="addScoreCount(1)">
+                        Купить
+                    </button>
+                </div><div class="store_card">
+                    <img class="masha_store" src="/images/alina.jpg"/>
+                    <div class="text_column">
+                        <p class="text_head">Алина</p>
+                        <p class="text_description">Сильная, смелая и хорошая подруга добавит +3 к клику</p>
+                    </div>
+                     <button class="button_store_buy"  onclick="addScoreCount(3)">
+                        Купить
+                    </button>
+                </div>
+                <div class="store_card">
+                    <img class="masha_store" src="/images/anfisa.jpg"/>
+                    <div class="text_column">
+                        <p class="text_head">Анфиса</p>
+                        <p class="text_description">Панк девочка которая ничего не боится, добрая, веселая добавит +7 к клику</p>
+                    </div>
+                     <button class="button_store_buy"  onclick="addScoreCount(7)">
+                        Купить
+                    </button>
+                </div>
+                <div class="store_card">
+                    <img class="masha_store" src="/images/iliy.jpg"/>
+                    <div class="text_column">
+                        <p class="text_head">Илия</p>
+                        <p class="text_description">Ваще хз кто это добавит +10 к клику</p>
+                    </div>
+                     <button class="button_store_buy"  onclick="addScoreCount(10)">
+                        Купить
+                    </button>
+                </div>
+                <div class="store_card">
+                    <img class="masha_store" src="/images/lena_friend.jpg"/>
+                    <div class="text_column">
+                        <p class="text_head">Друг Лена</p>
+                        <p class="text_description">Подруга маши, веселая, дальше хз-_- автоматически будет добавлять +1 к счету</p>
+                    </div>
+                     <button class="button_store_buy" onclick="addScoreTime(1)">
+                        Купить
+                    </button>
+                </div>
+                <div class="store_card">
+                    <img class="masha_store" src="/images/lena_sister.jpg"/>
+                    <div class="text_column">
+                        <p class="text_head">Лена Сестра</p>
+                        <p class="text_description">Крашиха школы номер 2, умная, веселая и добрая автоматически будет добавлять +3 к счету</p>
+                    </div>
+                     <button class="button_store_buy" onclick="addScoreTime(3)">
+                        Купить
+                    </button>
+                </div>
+                <div class="store_card">
+                    <img class="masha_store" src="/images/pidor.jpg"/>
+                    <div class="text_column">
+                        <p class="text_head">Пидор</p>
+                        <p class="text_description">Потому что он пидр епта автоматически будет добавлять +7 к счету</p>
+                    </div>
+                     <button class="button_store_buy" onclick="addScoreTime(7)">
+                        Купить
+                    </button>
+                </div>
+                <div class="store_card last_card">
+                    <img class="masha_store" src="/images/slava.jpg">
+                    <div class="text_column">
+                        <p class="text_head">Слава</p>
+                        <p class="text_description">Слава автоматически будет добавлять +10 к счету</p>
+                    </div>
+                     <button class="button_store_buy" onclick="addScoreTime(10)">
+                        Купить
+                    </button>
+                </div>
+                <div class="store_card bottom_spacer">
+                    <div class="spacer">
+
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="buttons_menu">
+
+                <button class="button_game" onclick="changeWindow('main')">
+                    МЕНЮ
+                </button>
+                
+                <button class="button_store" onclick="changeWindow('store')">
+                    МАГАЗИН    
+                </button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
